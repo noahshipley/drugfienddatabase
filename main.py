@@ -6,8 +6,9 @@ import hashlib
 import secrets
 import time
 import threading
+import os
 
-TOKEN = "MTQ3Njc4OTk5OTk3NzM2NTUzNg.G-ZgnC.M11Ayu1hJz1pGAXZ06rDj--RyasJeSye9qNWS8"
+TOKEN = os.getenv("TOKEN")
 GUILD_ID = 1476362814330241125 # your server ID
 REQUIRED_ROLE = "Verified Member"      # role required to generate token
 
